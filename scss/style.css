@@ -250,6 +250,44 @@ strong {
       width: 100%;
       height: 350px; } }
 
+#home-banner .flexslider {
+  margin: 0;
+  border: none;
+  overflow: hidden; }
+  #home-banner .flexslider .slides img {
+    width: auto;
+    display: block; }
+  #home-banner .flexslider .flex-direction-nav a {
+    height: 45px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 87%;
+    right: 21%;
+    opacity: 1;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; }
+    #home-banner .flexslider .flex-direction-nav a::before {
+      font-size: 30px; }
+  #home-banner .flexslider .flex-direction-nav .flex-prev {
+    display: none; }
+  #home-banner .flexslider .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    top: 87%;
+    right: -240px;
+    text-align: center;
+    z-index: 100; }
+  @media (max-width: 767px) {
+    #home-banner .flexslider .flex-control-nav {
+      display: none; } }
+  #home-banner .flexslider .flex-control-paging li a {
+    color: transparent;
+    background: rgba(0, 0, 0, 0.5); }
+    #home-banner .flexslider .flex-control-paging li a.flex-active {
+      background: #fff; }
 #home-banner .item-container {
   height: 435px;
   background: url(../images/slideshows/background1_0.jpg) no-repeat;
@@ -272,15 +310,26 @@ strong {
       font-size: 1.4rem; }
   #home-banner .item-container .texts .global-link {
     position: absolute;
-    bottom: -75px; }
+    bottom: 0; }
     #home-banner .item-container .texts .global-link a {
       color: #fff;
       margin: 0 auto;
       font-size: 1.2rem; }
+  #home-banner .item-container .img .item-image {
+    display: inline-block;
+    text-align: right; }
   @media (max-width: 767px) {
     #home-banner .item-container .img .item-image {
       width: 60%;
       display: inline-block; } }
+#home-banner .item-container-1 {
+  background: url(../images/slideshows/background2.jpg); }
+#home-banner .item-container-2 {
+  background: url(../images/slideshows/background3.jpg); }
+#home-banner .item-container-3 {
+  background: url(../images/slideshows/background4.jpg); }
+#home-banner .item-container-4 {
+  background: url(../images/slideshows/background5.jpg); }
 
 #ondeck {
   margin: 45px 0; }

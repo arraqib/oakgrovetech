@@ -411,6 +411,65 @@ strong {
     }
 }
 #home-banner{
+
+    .flexslider {
+        margin: 0;
+        border: none;
+        overflow: hidden;
+
+        .slides{
+            img {
+                width: auto;
+                display: block;
+            }
+        }
+
+        .flex-direction-nav a {
+            height: 45px;
+            margin: -20px 0 0;
+            position: absolute;
+            top: 87%;
+            right: 21%;
+            opacity: 1;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -ms-transition: none;
+            -o-transition: none;
+            transition: none;
+            &::before{
+                font-size: 30px;
+            }
+
+        }
+        .flex-direction-nav .flex-prev{
+            display: none
+        }
+
+        .flex-control-nav {
+            width: 100%;
+            position: absolute;
+            top: 87%;
+            right: -240px;;
+            text-align: center;
+            z-index: 100;
+        }
+
+        @media(max-width: 767px){
+            .flex-control-nav {
+                display: none;
+            }
+        }
+
+        .flex-control-paging li a{
+            color: transparent;
+            background: rgba(0, 0, 0, .5);
+
+            &.flex-active {
+                background: #fff;
+            }
+        }
+    }
+
     .item-container{
         height: 435px;
         background: url(../images/slideshows/background1_0.jpg) no-repeat;
@@ -441,7 +500,7 @@ strong {
 
             .global-link{
                 position: absolute;
-                bottom: -75px;
+                bottom: 0;
                 a{
                     color: #fff;
                     margin: 0 auto;
@@ -452,6 +511,11 @@ strong {
         }
         .img{
 
+            .item-image{
+                display: inline-block;
+                text-align: right;
+            }
+
         }
 
         @media(max-width: 767px){
@@ -460,6 +524,19 @@ strong {
                 display: inline-block;
             }
         }
+    }
+
+    .item-container-1{
+        background: url(../images/slideshows/background2.jpg);
+    }
+    .item-container-2{
+        background: url(../images/slideshows/background3.jpg);
+    }
+    .item-container-3{
+        background: url(../images/slideshows/background4.jpg);
+    }
+    .item-container-4{
+        background: url(../images/slideshows/background5.jpg);
     }
 }
 

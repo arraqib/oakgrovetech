@@ -1,7 +1,9 @@
 $(function () {
 
-    $('.main-content .flexslider').flexslider({
-        animation: "slide"
+    $('#home-banner .flexslider').flexslider({
+        animation: "fade",
+        animationSpeed: 500,
+        easing: "linear"
     });
 
     $('#ondeck .flexslider').flexslider({
@@ -13,6 +15,10 @@ $(function () {
         itemMargin: 10,
         minItems: 1,
         maxItems: 3
+    });
+
+    $('.main-content .flexslider').flexslider({
+        animation: "slide"
     });
 
 
