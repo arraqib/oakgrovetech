@@ -256,7 +256,7 @@ strong {
   background-size: cover; }
   #home-banner .item-container .texts h1 {
     padding: 0;
-    font-size: 3.7rem;
+    font-size: 3.2rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: normal;
@@ -264,6 +264,23 @@ strong {
   #home-banner .item-container .texts h3 {
     font-size: 2.3rem;
     color: #fff; }
+  #home-banner .item-container .texts .item-link {
+    background: rgba(0, 0, 0, 0.5); }
+    #home-banner .item-container .texts .item-link a {
+      color: #fff;
+      display: inline-block;
+      font-size: 1.4rem; }
+  #home-banner .item-container .texts .global-link {
+    position: absolute;
+    bottom: -75px; }
+    #home-banner .item-container .texts .global-link a {
+      color: #fff;
+      margin: 0 auto;
+      font-size: 1.2rem; }
+  @media (max-width: 767px) {
+    #home-banner .item-container .img .item-image {
+      width: 60%;
+      display: inline-block; } }
 
 #ondeck {
   margin: 45px 0; }
