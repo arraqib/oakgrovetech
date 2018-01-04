@@ -290,7 +290,7 @@ strong {
       background: #fff; }
 #home-banner .item-container {
   height: 435px;
-  background: url(../images/slideshows/background1_0.jpg) no-repeat;
+  background: url(../images/slideshows/background1_0.jpg) 50% 50% no-repeat;
   background-size: cover; }
   #home-banner .item-container .texts h1 {
     padding: 0;
