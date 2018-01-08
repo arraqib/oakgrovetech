@@ -1,8 +1,11 @@
 $color-primary: #606060;
-$color-secondary: #527c23;
+$color-secondary: #5c8727;
 $color-link: #959594;
 $color-sideborder: #707272;
 $color-blue:#0f72a7;
+$color-border-content: #a3a4a4;
+$color-bg-content: #eeedeb;
+$color-bg-footer: #EBEAE8;
 html {
     // font-size: 62.5%;
 }
@@ -66,8 +69,7 @@ strong {
     @media(min-width: 768px) {
         padding-bottom: 1px !important;
     }
-
-    .dropdown-menu{
+    .dropdown-menu {
         margin: 0;
     }
 }
@@ -229,9 +231,13 @@ strong {
         .article {
             &-title {
                 margin-bottom: 20px;
-                color: #5c8727;
+                color: $color-secondary;
                 font-size: 18px;
                 font-size: 1.8rem;
+            }
+            h4 {
+                color: #0f72a7;
+                font-size: 1.2rem;
             }
         }
     }
@@ -410,20 +416,18 @@ strong {
         }
     }
 }
-#home-banner{
 
+#home-banner {
     .flexslider {
         margin: 0;
         border: none;
         overflow: hidden;
-
-        .slides{
+        .slides {
             img {
                 width: auto;
                 display: block;
             }
         }
-
         .flex-direction-nav a {
             height: 45px;
             margin: -20px 0 0;
@@ -436,47 +440,41 @@ strong {
             -ms-transition: none;
             -o-transition: none;
             transition: none;
-            &::before{
+            &::before {
                 font-size: 30px;
             }
-
         }
-        .flex-direction-nav .flex-prev{
+        .flex-direction-nav .flex-prev {
             display: none
         }
-
         .flex-control-nav {
             width: 100%;
             position: absolute;
             top: 87%;
-            right: -240px;;
+            right: -240px;
+            ;
             text-align: center;
             z-index: 100;
         }
-
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             .flex-control-nav {
                 display: none;
             }
         }
-
-        .flex-control-paging li a{
+        .flex-control-paging li a {
             color: transparent;
             background: rgba(0, 0, 0, .5);
-
             &.flex-active {
                 background: #fff;
             }
         }
     }
-
-    .item-container{
+    .item-container {
         height: 435px;
         background: url(../images/slideshows/background1_0.jpg) 50% 50% no-repeat;
         background-size: cover;
-
-        .texts{
-            h1{
+        .texts {
+            h1 {
                 padding: 0;
                 font-size: 3.2rem;
                 color: #fff;
@@ -484,66 +482,58 @@ strong {
                 font-weight: normal;
                 margin-top: 0;
             }
-            h3{
+            h3 {
                 font-size: 2.3rem;
                 color: #fff
             }
-
-            .item-link{
+            .item-link {
                 background: rgba(0, 0, 0, .5);
-                a{
+                a {
                     color: #fff;
                     display: inline-block;
                     font-size: 1.4rem;
                 }
             }
-
-            .global-link{
+            .global-link {
                 position: absolute;
                 bottom: 0;
-                a{
+                a {
                     color: #fff;
                     margin: 0 auto;
                     font-size: 1.2rem;
                 }
             }
-            
         }
-        .img{
-
-            .item-image{
+        .img {
+            .item-image {
                 display: inline-block;
                 text-align: right;
             }
-
         }
-
-        @media(max-width: 767px){
-            .img .item-image{
+        @media(max-width: 767px) {
+            .img .item-image {
                 width: 60%;
                 display: inline-block;
             }
         }
     }
-
-    .item-container-1{
+    .item-container-1 {
         background-image: url(../images/slideshows/background2.jpg);
     }
-    .item-container-2{
+    .item-container-2 {
         background-image: url(../images/slideshows/background3.jpg);
     }
-    .item-container-3{
+    .item-container-3 {
         background-image: url(../images/slideshows/background4.jpg);
     }
-    .item-container-4{
+    .item-container-4 {
         background-image: url(../images/slideshows/background5.jpg);
     }
 }
 
 #ondeck {
     margin: 45px 0;
-
-    .block-title{
+    .block-title {
         font-size: 2.8rem;
         color: #000;
         text-transform: uppercase;
@@ -560,7 +550,6 @@ strong {
                     padding: 15px;
                     height: 100%;
                     overflow: hidden;
-
                     h2 {
                         color: #111;
                         font-size: 1.1rem;
@@ -569,28 +558,25 @@ strong {
                         text-overflow: ellipsis;
                         white-space: nowrap;
                     }
-                    
-                    a{
+                    a {
                         font-size: 1.4rem;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                     }
-
                     .box-content {
-                        img{
+                        img {
                             max-width: 108px;
                             max-height: 90px;
                             width: 108px;
                             height: 90px;
                         }
-                        span{
+                        span {
                             overflow: hidden;
                         }
                     }
                 }
             }
         }
-
         .flex-direction-nav a {
             height: 45px;
             transition: none;
@@ -602,7 +588,7 @@ strong {
 .page-footer {
     margin-top: 45px;
     padding: 40px 0;
-    background: #EBEAE8;
+    background: $color-bg-footer;
     a {
         color: #8A8A8A;
     }
@@ -625,5 +611,81 @@ strong {
     .copyright {
         margin-top: 10px;
         font-size: 1.2rem;
+    }
+}
+
+.portfolio-container {
+    .portfolio-control {
+        .controls {
+            a {
+                cursor: pointer;
+                color: #fff;
+                background-color: #a6a6a6;
+                border-color: darken($color: #a6a6a6, $amount: 5);
+            }
+            a.mixitup-control-active,
+            a.active,
+            a:active,
+            a:focus {
+                background-color: $color-secondary;
+                box-shadow: 0 0 0 0.2rem darken($color: $color-secondary, $amount: 1);
+                border-color: darken($color: $color-secondary, $amount: 2)
+            }
+        }
+    }
+    .portfolio-content {
+        .item {
+            height: 390px;
+            background: $color-bg-content;
+            .item-box {
+                margin: 0;
+                border: 1px solid $color-border-content;
+                h4 {
+                    background: #fff;
+                    a {
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+                .item-image {
+                    text-decoration: none;
+                    color: #527c23;
+                    display: inline-block;
+                    height: 155px;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            .item-desc {
+                .client,
+                .nature-of-work {
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-sidebar {
+    .fancybox {
+        .fancy-background-box {
+            background: $color-bg-content;
+        }
+        h4 {
+            color: #0f72a7;
+            font-size: 1.2rem;
+        }
+        .links{
+            .fancy-items{
+                .fancy-item{
+                    
+                }
+            }
+        }
     }
 }

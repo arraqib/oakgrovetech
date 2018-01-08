@@ -6,9 +6,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #527c23; }
+  color: #5c8727; }
   a:hover {
-    color: #527c23;
+    color: #5c8727;
     text-decoration: underline; }
 
 .text-bold {
@@ -29,7 +29,7 @@ strong {
   text-transform: uppercase;
   color: #606060 !important; }
   .nav-item .nav-link:hover {
-    color: #527c23 !important;
+    color: #5c8727 !important;
     text-decoration: none !important; }
 
 .form-control:focus {
@@ -56,14 +56,14 @@ strong {
   text-transform: uppercase;
   color: #606060 !important; }
   #topbar .nav-item .nav-link:hover {
-    color: #527c23 !important;
+    color: #5c8727 !important;
     text-decoration: none !important; }
 
 #primary-nav .nav-item {
   border-bottom: 3px solid transparent;
   margin-left: 1rem; }
   #primary-nav .nav-item:hover, #primary-nav .nav-item.active {
-    border-bottom-color: #527c23; }
+    border-bottom-color: #5c8727; }
 
 .dropdown-menu {
   display: none;
@@ -76,7 +76,7 @@ strong {
 .dropdown-item {
   color: #606060; }
 .dropdown-item.active {
-  background-color: #527c23;
+  background-color: #5c8727;
   color: #fff; }
 
 @media (max-width: 991px) {
@@ -143,6 +143,9 @@ strong {
     color: #5c8727;
     font-size: 18px;
     font-size: 1.8rem; }
+  #page-container .main-content .article h4 {
+    color: #0f72a7;
+    font-size: 1.2rem; }
   #page-container .content-sidebar {
     padding-top: 25px; }
     #page-container .content-sidebar .sidebar-module {
@@ -164,7 +167,7 @@ strong {
         width: 100%;
         height: auto; }
       #page-container .content-sidebar #sidebar-slider #carouselExampleControls .carousel-item .item-content .carousel-title-inner {
-        color: #527c23;
+        color: #5c8727;
         font-size: 1.3rem;
         font-weight: bold; }
         #page-container .content-sidebar #sidebar-slider #carouselExampleControls .carousel-item .item-content .carousel-title-inner:hover {
@@ -184,7 +187,7 @@ strong {
     #page-container .content-sidebar .fancybox .fancy-title {
       margin: 0;
       padding: 7px 10px;
-      background: #527c23;
+      background: #5c8727;
       text-transform: uppercase;
       color: #fff;
       font-size: 1rem;
@@ -389,5 +392,49 @@ strong {
   .page-footer .copyright {
     margin-top: 10px;
     font-size: 1.2rem; }
+
+.portfolio-container .portfolio-control .controls a {
+  cursor: pointer;
+  color: #fff;
+  background-color: #a6a6a6;
+  border-color: #999999; }
+.portfolio-container .portfolio-control .controls a.mixitup-control-active,
+.portfolio-container .portfolio-control .controls a.active,
+.portfolio-container .portfolio-control .controls a:active,
+.portfolio-container .portfolio-control .controls a:focus {
+  background-color: #5c8727;
+  box-shadow: 0 0 0 0.2rem #598326;
+  border-color: #577f25; }
+.portfolio-container .portfolio-content .item {
+  height: 390px;
+  background: #eeedeb; }
+  .portfolio-container .portfolio-content .item .item-box {
+    margin: 0;
+    border: 1px solid #a3a4a4; }
+    .portfolio-container .portfolio-content .item .item-box h4 {
+      background: #fff; }
+      .portfolio-container .portfolio-content .item .item-box h4 a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold; }
+    .portfolio-container .portfolio-content .item .item-box .item-image {
+      text-decoration: none;
+      color: #527c23;
+      display: inline-block;
+      height: 155px;
+      width: 100%; }
+      .portfolio-container .portfolio-content .item .item-box .item-image img {
+        width: 100%;
+        max-height: 100%; }
+  .portfolio-container .portfolio-content .item .item-desc .client,
+  .portfolio-container .portfolio-content .item .item-desc .nature-of-work {
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+
+.portfolio-sidebar .fancybox .fancy-background-box {
+  background: #eeedeb; }
+.portfolio-sidebar .fancybox h4 {
+  color: #0f72a7;
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */

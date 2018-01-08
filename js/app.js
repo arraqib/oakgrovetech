@@ -22,4 +22,9 @@ $(function () {
     });
 
 
+    //Portfolio
+    var containerEl = document.querySelector('.portfolio-content');
+    var mixer = mixitup(containerEl);
+
+
 });
