@@ -460,4 +460,28 @@ strong {
   background: #5c8727;
   border-color: #5c8727; }
 
+.clients strong {
+  color: #606060; }
+.clients .client-items .client-item {
+  display: block;
+  height: 125px;
+  background-position: 0 top;
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  overflow: hidden; }
+  .clients .client-items .client-item:hover {
+    background-position: 0 bottom; }
+.clients .client-items .client-item-1 {
+  background-image: url(../images/client/1.jpg); }
+.clients .client-items .client-item-2 {
+  background-image: url(../images/client/2.jpg); }
+.clients .client-items .client-item-3 {
+  background-image: url(../images/client/3.jpg); }
+.clients .client-items .client-item-4 {
+  background-image: url(../images/client/4.jpg); }
+.clients .client-items .client-item-5 {
+  background-image: url(../images/client/5.jpg); }
+.clients .client-items .client-item-6 {
+  background-image: url(../images/client/6.jpg); }
+
 /*# sourceMappingURL=style.css.map */

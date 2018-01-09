@@ -694,42 +694,79 @@ strong {
         .news-item {
             &:first-child {
                 background: #eee;
-                a{
+                a {
                     height: 250px;
                 }
             }
             border-bottom: 1px solid #ccc;
-            a{
+            a {
                 height: 140px;
-                img{
+                img {
                     max-height: 100%;
                 }
             }
-            .title{
+            .title {
                 font-weight: bold;
                 font-size: 1.5rem;
             }
         }
     }
 }
-#page-container .news-sidebar{
-    .fancybox{
-        .fancy-title{
+
+#page-container .news-sidebar {
+    .fancybox {
+        .fancy-title {
             background: $color-bg-gray;
         }
     }
 }
 
-.pagination{
-    .page-item{
-        .page-link{
+.pagination {
+    .page-item {
+        .page-link {
             color: $color-secondary;
         }
-
-        &.active .page-link{
+        &.active .page-link {
             color: #ffffff;
             background: $color-secondary;
             border-color: $color-secondary;
+        }
+    }
+}
+
+.clients {
+    strong {
+        color: $color-primary;
+    }
+    .client-items {
+        .client-item {
+            display: block;
+            height: 125px;
+            background-position: 0 top;
+            background-repeat: no-repeat;
+            background-size: 100% 200%;
+            overflow: hidden;
+            &:hover {
+                background-position: 0 bottom;
+            }
+        }
+        .client-item-1 {
+            background-image: url(../images/client/1.jpg);
+        }
+        .client-item-2 {
+            background-image: url(../images/client/2.jpg);
+        }
+        .client-item-3 {
+            background-image: url(../images/client/3.jpg);
+        }
+        .client-item-4 {
+            background-image: url(../images/client/4.jpg);
+        }
+        .client-item-5 {
+            background-image: url(../images/client/5.jpg);
+        }
+        .client-item-6 {
+            background-image: url(../images/client/6.jpg);
         }
     }
 }
