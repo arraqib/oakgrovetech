@@ -23,8 +23,7 @@ $(function () {
 
 
     //Portfolio
-    var containerEl = document.querySelector('.portfolio-content');
-    var mixer = mixitup(containerEl);
+    var mixer = mixitup($('.portfolio-content'));
 
 
 });

@@ -186,14 +186,13 @@ strong {
           margin-right: -20px; }
     #page-container .content-sidebar .fancybox .fancy-title {
       margin: 0;
-      padding: 7px 10px;
       background: #5c8727;
       text-transform: uppercase;
       color: #fff;
       font-size: 1rem;
       font-weight: normal; }
     #page-container .content-sidebar .fancybox .fancy-field .fancy-items .fancy-item {
-      padding: 4px 10px; }
+      padding: 0.5rem 0; }
 
 .main-content .flexslider .flex-caption {
   padding: 2%;

@@ -299,7 +299,6 @@ strong {
         .fancybox {
             .fancy-title {
                 margin: 0;
-                padding: 7px 10px;
                 background: $color-secondary;
                 text-transform: uppercase;
                 color: #fff;
@@ -309,7 +308,7 @@ strong {
             .fancy-field {
                 .fancy-items {
                     .fancy-item {
-                        padding: 4px 10px;
+                        padding: 0.5rem 0;
                     }
                 }
             }
@@ -680,11 +679,9 @@ strong {
             color: #0f72a7;
             font-size: 1.2rem;
         }
-        .links{
-            .fancy-items{
-                .fancy-item{
-                    
-                }
+        .links {
+            .fancy-items {
+                .fancy-item {}
             }
         }
     }
