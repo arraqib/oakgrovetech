@@ -5,6 +5,7 @@ $color-sideborder: #707272;
 $color-blue:#0f72a7;
 $color-border-content: #a3a4a4;
 $color-bg-content: #eeedeb;
+$color-bg-gray: #606060;
 $color-bg-footer: #EBEAE8;
 html {
     // font-size: 62.5%;
@@ -683,6 +684,52 @@ strong {
             .fancy-items {
                 .fancy-item {}
             }
+        }
+    }
+}
+
+// News section
+.news {
+    .news-items {
+        .news-item {
+            &:first-child {
+                background: #eee;
+                a{
+                    height: 250px;
+                }
+            }
+            border-bottom: 1px solid #ccc;
+            a{
+                height: 140px;
+                img{
+                    max-height: 100%;
+                }
+            }
+            .title{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+#page-container .news-sidebar{
+    .fancybox{
+        .fancy-title{
+            background: $color-bg-gray;
+        }
+    }
+}
+
+.pagination{
+    .page-item{
+        .page-link{
+            color: $color-secondary;
+        }
+
+        &.active .page-link{
+            color: #ffffff;
+            background: $color-secondary;
+            border-color: $color-secondary;
         }
     }
 }
