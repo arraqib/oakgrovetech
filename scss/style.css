@@ -438,9 +438,9 @@ strong {
 
 .news .news-items .news-item {
   border-bottom: 1px solid #ccc; }
-  .news .news-items .news-item:first-child {
+  .news .news-items .news-item.featured {
     background: #eee; }
-    .news .news-items .news-item:first-child a {
+    .news .news-items .news-item.featured a {
       height: 250px; }
   .news .news-items .news-item a {
     height: 140px; }

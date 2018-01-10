@@ -692,7 +692,7 @@ strong {
 .news {
     .news-items {
         .news-item {
-            &:first-child {
+            &.featured {
                 background: #eee;
                 a {
                     height: 250px;
