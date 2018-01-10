@@ -139,6 +139,7 @@ strong {
     #page-container .main-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       content: ">" !important; }
   #page-container .main-content .article-title {
+    margin-top: 20px;
     margin-bottom: 20px;
     color: #5c8727;
     font-size: 18px;
@@ -150,6 +151,11 @@ strong {
     padding-top: 25px; }
     #page-container .content-sidebar .sidebar-module {
       border: 1px solid #707272; }
+    #page-container .content-sidebar .sidebar-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #5c8727;
+      font-size: 1.5rem; }
     #page-container .content-sidebar #sidebar-slider #carouselExampleControls .carousel-item .carousel-title {
       font-size: 1rem;
       text-transform: uppercase;
@@ -450,6 +456,16 @@ strong {
     font-weight: bold;
     font-size: 1.5rem; }
 
+.blogs .blogs-items .blogs-item {
+  border-bottom: 1px solid #ccc; }
+  .blogs .blogs-items .blogs-item a {
+    height: 140px; }
+    .blogs .blogs-items .blogs-item a img {
+      max-height: 100%; }
+  .blogs .blogs-items .blogs-item .title {
+    font-weight: bold;
+    font-size: 1.5rem; }
+
 #page-container .news-sidebar .fancybox .fancy-title {
   background: #606060; }
 
@@ -460,56 +476,56 @@ strong {
   background: #5c8727;
   border-color: #5c8727; }
 
-.clients strong {
+.clients strong,
+.capability strong {
   color: #606060; }
-.clients .client-items .client-item {
+
+.client-items .client-item {
   display: block;
   height: 125px;
   background-position: 0 top;
   background-repeat: no-repeat;
   background-size: 100% 200%;
   overflow: hidden; }
-  .clients .client-items .client-item:hover {
+  .client-items .client-item:hover {
     background-position: 0 bottom; }
-.clients .client-items .client-item-1 {
+.client-items .client-item-1 {
   background-image: url(../images/client/1.jpg); }
-.clients .client-items .client-item-2 {
+.client-items .client-item-2 {
   background-image: url(../images/client/2.jpg); }
-.clients .client-items .client-item-3 {
+.client-items .client-item-3 {
   background-image: url(../images/client/3.jpg); }
-.clients .client-items .client-item-4 {
+.client-items .client-item-4 {
   background-image: url(../images/client/4.jpg); }
-.clients .client-items .client-item-5 {
+.client-items .client-item-5 {
   background-image: url(../images/client/5.jpg); }
-.clients .client-items .client-item-6 {
+.client-items .client-item-6 {
   background-image: url(../images/client/6.jpg); }
 
-.capability strong {
-  color: #606060; }
-.capability .capability-items .capability-item {
+.capability-items .capability-item {
   border-color: #5c8727 !important;
   border-bottom-color: transparent;
   margin-bottom: 0; }
-  .capability .capability-items .capability-item a {
+  .capability-items .capability-item a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
     width: 100%;
     height: 55px;
     overflow: hidden; }
-  .capability .capability-items .capability-item .img-container {
+  .capability-items .capability-item .img-container {
     height: 165px;
     overflow: hidden; }
-    .capability .capability-items .capability-item .img-container a {
+    .capability-items .capability-item .img-container a {
       position: relative;
       width: 100%;
       height: 100%;
       display: inline-block; }
-      .capability .capability-items .capability-item .img-container a img {
+      .capability-items .capability-item .img-container a img {
         width: 100%;
         max-height: 100%;
         height: 100%; }
-      .capability .capability-items .capability-item .img-container a span {
+      .capability-items .capability-item .img-container a span {
         position: absolute;
         top: 0;
         left: 0;
@@ -517,10 +533,10 @@ strong {
         width: 100%;
         height: 100%;
         background: transparent; }
-  .capability .capability-items .capability-item:hover a {
+  .capability-items .capability-item:hover a {
     background: #5c8727;
     color: #fff; }
-  .capability .capability-items .capability-item:hover .img-container a span {
+  .capability-items .capability-item:hover .img-container a span {
     background: rgba(92, 135, 39, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
