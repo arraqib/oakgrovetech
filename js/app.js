@@ -6,6 +6,11 @@ $(function () {
         easing: "linear"
     });
 
+    // append slider-controls in container
+    $('#slider-controls .slider-control-container').append( $('.flex-control-nav') );
+    $('#slider-controls .slider-control-container').append( $('.flex-direction-nav') );
+    
+
     $('#ondeck .flexslider').flexslider({
         animation: "slide",
         animationLoop: true,
