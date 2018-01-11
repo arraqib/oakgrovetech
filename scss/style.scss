@@ -23,6 +23,14 @@ p {}
 //Links
 a {
     text-decoration: none;
+    color: $color-blue;
+    &:hover {
+        color: $color-blue;
+        text-decoration: underline;
+    }
+}
+
+.sidebar-module a{
     color: $color-secondary;
     &:hover {
         color: $color-secondary;
@@ -34,18 +42,22 @@ a {
     font-weight: bold
 }
 
-strong {
+strong{
+    line-height: 15px;
+    color: $color-primary;
+    font-weight: bold;
+    
+}
+strong a {
     line-height: 15px;
     color: $color-blue;
     font-weight: bold;
-    .main-content & a,
-    .main-content p a {
+    &:hover{
+        text-decoration: underline;
         color: $color-blue;
-        &:hover {
-            text-decoration: underline !important;
-        }
     }
 }
+
 
 .nav-item .nav-link {
     text-transform: uppercase;
@@ -543,14 +555,17 @@ strong {
     }
 }
 
+
+
+.block-title {
+    font-size: 2.8rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 #ondeck {
     margin: 45px 0;
-    .block-title {
-        font-size: 2.8rem;
-        color: #000;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
     .flexslider {
         margin-top: 10px;
         margin-bottom: 0px;
@@ -593,6 +608,18 @@ strong {
             height: 45px;
             transition: none;
         }
+    }
+}
+
+#services{
+    width: 100%;
+    height: 380px;
+    background: url(../images/services.jpg) center top no-repeat;
+}
+
+body[ data-page="index"]{
+    .page-footer{
+        margin-top: 0;
     }
 }
 
