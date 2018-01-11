@@ -2,14 +2,16 @@ $(function () {
 
     $('#home-banner .flexslider').flexslider({
         animation: "fade",
-        animationSpeed: 500,
-        easing: "linear"
+        slideshowSpeed: 7000,
+        easing: "swing",
+        animationSpeed: 600,
+        useCSS: true
     });
 
     // append slider-controls in container
     $('#slider-controls .slider-control-container').append( $('.flex-control-nav') );
     $('#slider-controls .slider-control-container').append( $('.flex-direction-nav') );
-    
+
 
     $('#ondeck .flexslider').flexslider({
         animation: "slide",
