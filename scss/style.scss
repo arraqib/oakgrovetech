@@ -935,8 +935,54 @@ body[ data-page="index"] {
         .card-header {
             a[data-toggle="collapse"] {
                 color: $color-primary;
-                &:hover{
+                &:hover {
                     text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+
+#page-container .course-sidebar {
+    .sidebar-module {
+        border: none;
+        border-left: 1px solid #ddd;
+        .fancy-items {
+            h3 {
+                width: 100%;
+                margin-bottom: 6px;
+                padding: 7px 10px;
+                background: #5c8727;
+                color: #fff;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            form {
+                input, textarea {
+                    border-radius: 0;
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem rgba(134, 202, 140, 0.5);
+                    }
+                }
+                button {
+                    border-radius: 0;
+                    width: 100%;
+                    margin-bottom: 6px;
+                    padding: 7px 10px;
+                    background: #5c8727;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    &:active,
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem rgba(134, 202, 140, 0.5);
+                    }
                 }
             }
         }

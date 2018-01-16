@@ -597,4 +597,36 @@ body[data-page="index"] .page-footer {
   #accordion .card .card-header a[data-toggle="collapse"]:hover {
     text-decoration: none; }
 
+.form-check-input {
+  margin-left: 0; }
+
+#page-container .course-sidebar .sidebar-module {
+  border: none;
+  border-left: 1px solid #ddd; }
+  #page-container .course-sidebar .sidebar-module .fancy-items h3 {
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 7px 10px;
+    background: #5c8727;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center; }
+  #page-container .course-sidebar .sidebar-module .fancy-items form input, #page-container .course-sidebar .sidebar-module .fancy-items form textarea {
+    border-radius: 0; }
+    #page-container .course-sidebar .sidebar-module .fancy-items form input:focus, #page-container .course-sidebar .sidebar-module .fancy-items form textarea:focus {
+      box-shadow: 0 0 0 0.2rem rgba(134, 202, 140, 0.5); }
+  #page-container .course-sidebar .sidebar-module .fancy-items form button {
+    border-radius: 0;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 7px 10px;
+    background: #5c8727;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+    #page-container .course-sidebar .sidebar-module .fancy-items form button:active, #page-container .course-sidebar .sidebar-module .fancy-items form button:focus {
+      box-shadow: 0 0 0 0.2rem rgba(134, 202, 140, 0.5); }
+
 /*# sourceMappingURL=style.css.map */
