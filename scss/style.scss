@@ -14,7 +14,7 @@ html {
 html,
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: $color-primary;
 }
 
@@ -32,7 +32,8 @@ a {
 
 .sidebar-module,
 {
-    a, .slide-box a {
+    a,
+    .slide-box a {
         color: $color-secondary;
         &:hover {
             color: $color-secondary;
@@ -53,7 +54,6 @@ a {
 .blogs {
     .title a {
         color: $color-secondary;
-
         &:hover {
             color: $color-secondary;
             text-decoration: underline;
@@ -926,6 +926,19 @@ body[ data-page="index"] {
     .user a {
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+#accordion {
+    .card {
+        .card-header {
+            a[data-toggle="collapse"] {
+                color: $color-primary;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
